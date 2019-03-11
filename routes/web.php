@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/admin/index');
 });
+Route::get('/admin/welcome','admin\UserController@welcome');
+Route::get('/admin/info','admin\UserController@index');
+Route::get('/admin/create','admin\UserController@create');
+// Route::get('/admin/welcome','UserController@welcome');
